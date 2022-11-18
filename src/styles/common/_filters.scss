@@ -1,0 +1,22 @@
+.sg-filters {
+    &--blade-runner {
+        filter: hue-rotate(90deg);
+    }
+
+    &--ansel {
+        filter: brightness(1.2) contrast(1.5) grayscale(1) invert(0.25) sepia(0.15);
+    }
+
+    &--vanilla-sky {
+        filter: brightness(1.2) contrast(0.75) hue-rotate(-30deg) saturate(1.2) sepia(0.25);
+    }
+
+    &--engraved {
+        filter: brightness(2) contrast(1) invert(1) saturate(0) sepia(0.2);
+    }
+
+    &--1970s {
+        filter: brightness(1.2) contrast(0.5) grayscale(0.1) saturate(2) sepia(0.3) ;
+    }
+}
+

@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.sg-main-feed {
+    &--empty {
+        h2 {
+            color: $color-mid;
+            margin: 15%;
+            text-align: center;
+        }
+    }
+}

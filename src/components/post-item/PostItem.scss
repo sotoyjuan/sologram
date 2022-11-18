@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+
+@keyframes like {
+    0%  {z-index: auto;}
+    10% {opacity: 1;}
+    50% {transform: scale(1.2); color: $color-secondary;}
+    65% {opacity: 1;}
+    99% {z-index: auto; transform: scale(0.5);}
+    100% { z-index: -1; opacity: 0; color: $color-lightest;}
+  }
+
+.sg-post-item {
+    position: relative;
+    margin-bottom: 1rem;
+    
+    &__title {
+        margin: 0.25rem;
+    }
+
+    &__date {
+        color: $color-mid;
+        font-size: 0.75rem;
+        margin: 0 0.25rem 0.25rem;
+    }
+
+    &__image {
+        aspect-ratio: 1;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &__like-button {
+        background-color: transparent;
+        border: none;
+        bottom: 0;
+        cursor: pointer;
+        margin: 0.5rem 0.25rem;
+        padding: 0.5rem;
+        position: absolute;
+        right: 0;
+        color: $color-light;
+
+        &--liked {
+            color: $color-secondary;
+        }
+    }
+
+    &__animated-heart {
+        color: $color-light;
+        left: 50%;
+        position: absolute;
+        top: 55%;
+        transform: translate(-50%, -50%);
+
+        svg {
+            opacity: 0;
+            z-index: -1;
+        }
+
+
+        &--active {
+            svg {
+                animation-name: like;
+                animation-duration: 300ms;
+            }
+        }
+    }
+}

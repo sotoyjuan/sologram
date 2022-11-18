@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.sg-new-post {
+    &__viewer {
+        background-color: $color-dark ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 16px;
+    }
+
+    &__preview {
+        aspect-ratio: 1;
+        object-fit: cover;
+        width: 100%;
+    }
+}

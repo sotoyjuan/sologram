@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+.sg-header {
+    background-color: $color-lightest;
+    border-bottom: 1px $color-light solid;
+    height: $frame-height;
+    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    h1 {
+        color: $color-main;
+        cursor: default;
+        font-family: $font-family-logo;
+        max-width: $max-width;
+        margin: auto;
+        text-align: center;
+    }
+}

@@ -1,0 +1,37 @@
+@import './variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    max-width: $max-width;
+    margin: calc($frame-height + 0.5rem) auto ;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.4);
+  }
+
+  ::-webkit-scrollbar-thumb:active{
+    background: rgba(0,0,0,.9);
+}
